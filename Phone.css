@@ -1,0 +1,36 @@
+/* Header-Section */
+.navbar {
+  height:250px;
+}
+.logo img {
+  width: 70%;
+}
+li {
+  margin-bottom: 10px;
+}
+nav ul {
+  text-align: right;
+}
+#row {
+  flex-direction: column;
+  width: 90%;
+}
+.first {
+  flex-direction: column;
+}
+.col-1 h1 {
+  margin-top: 0;
+}
+.col-1 ,.col-2{
+  height: 60vh;
+  padding-bottom: 1rem;
+}
+.imgbox {
+  width: 350px;
+}
+.imgbox img {
+  width: 85%;
+  display: block;
+  margin: auto;
+}
+/* Category-Section */
