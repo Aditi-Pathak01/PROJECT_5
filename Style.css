@@ -6,11 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
 }
-
 /* Header-Section */
 .header {
   background-color: #E5FC54;
@@ -29,10 +27,15 @@ body {
   flex-basis: 50%;
 }
 .logo img {
-  width: 40%;
+  width: 30%;
   display: block;
   margin: auto 17%;
   cursor: pointer;
+  transition: all 0.2s ease 0.1s;
+  padding-bottom: 0.7rem;
+}
+.logo img:hover {
+  border-bottom: 2px solid #2454FF;
 }
 nav ul {
   list-style-type: none;
@@ -45,7 +48,7 @@ li a {
   color: #2454FF;
   margin-right: 20px;
   padding: 8px;
-  transition: all 0.2s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
 }
 li a:hover {
   border-bottom: 2px solid #2454FF;
@@ -101,13 +104,12 @@ li a:hover {
 }
 /* Category-section */
 .category {
-  margin: 50px 0 40px;
-  height: 40vh;
+  margin: 150px 0 40px;
+  height: 50vh;
 }
 .small-container {
   margin: 0 150px;
 }
-
 .row {
   display: flex;
   justify-content: center;
@@ -130,23 +132,25 @@ li a:hover {
 /* Feature-Section */
 .Feature-Section {
   height: 50vh;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 .Feature-Section h2 {
   text-align: center;
   color: #555;
   font-family: popping;
-  margin-bottom: 2.5rem;
   position: relative;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-size: 8vmin;
 }
  h2::after {
   content: "";
   position: absolute;
   bottom: -12px;
+  left: 46%;
   height: 4px;
-  width: 4%;
+  width: 8%;
   background-color: orange;
-  transform: translateX(-130px);
 }
 .F-box {
   max-width: 160px;
@@ -160,29 +164,27 @@ li a:hover {
 .F-box .ratings {
   color: rgb(243, 175, 49);
 }
-.F-box p {
-  color: #555;
-  font-size: 14px;
-}
-
 .F-box:hover {
   transform: translateY(-10px);
 }
 /* Latest-Product SEction */
 .latest-product {
   background-color: #E5FC54;
-  padding: 2rem 0;
+  padding: 50px 300px;
+  margin: 0 0 100px;
 }
 .latest-product h2 {
   color: #2454FF;
   text-align: center;
   font-family: popping;
-  margin-bottom: 2.5rem;
   position: relative;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-size: 8vmin;
 }
 .latest-product .row {
   flex-wrap: wrap;
-  margin: 0 300px;
+  margin: 0;
 }
 .latest-product p {
   color: black;
@@ -192,9 +194,10 @@ li a:hover {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
+  margin-bottom: 100px;
 }
 .offer-section .small-container {
-margin: 0;
+  margin: 0;
 }
 .offer-section .row {
   align-items: center;
@@ -202,12 +205,12 @@ margin: 0;
 .offer-col-1,.offer-col-2 {
   width: 500px;
 }
-.offer-col-1 img{
+.offer-col-1 img {
   width: 80%;
   border-radius: 10px;
 }
 .offer-col-1 {
-transition: all 1s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .offer-col-1:hover {
   transform: scale(1.1,1.1);
@@ -218,53 +221,55 @@ transition: all 1s ease 0s;
   margin-bottom: 1rem;
   color: green;
   font-size: 6vmin;
+  cursor: pointer;
 }
 .offer-col-2 p {
   color: #555;
   margin-bottom: 2rem;
   font-weight: bold;
 }
-
 .offer-col-2 .offer-desc {
   font-size: 13px;
 }
 .offer-col-2 button {
-background-color: transparent;
-border: 1px solid darkred;
-color: brown;
-font-size: 1rem;
-cursor: pointer;
-padding: 9px 15px;
-border-radius: 10px;
-transition: all 0.15s;
+  background-color: transparent;
+  border: 1px solid darkred;
+  color: brown;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 9px 15px;
+  border-radius: 10px;
+  transition: all 0.15s;
 }
 .offer-col-2 button:hover {
-  background-color:brown;
-  color:white;
+  background-color: brown;
+  color: white;
  }
 /*  Testimonial*/
 .testimonial-section {
-  padding: 30px 0;
+  padding: 70px 0;
+  margin-bottom: 70px;
   background-color: rgb(218, 242, 231);
 }
 .testimonial-section h1 {
   text-align: center;
   color: seagreen;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-family: popping;
-
+  cursor: pointer;
+  font-size: 8vmin;
 }
 .t-box {
-width: 30%;
-text-align: center;
-box-shadow: 0 0 15px 0 rgba(0,0, 0,0.1);
-padding: 0 30px;
-margin-left: 1rem;
-transition: all 0.5s ease 0s;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 0 15px 0 rgba(0,0, 0,0.1);
+  padding: 0 30px;
+  margin-left: 1rem;
+  transition: all 0.5s ease 0s;
 }
 .t-box:hover {
-transform: translateY(-10px);
-cursor: pointer;
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 .t-box i {
   color: orange;
@@ -308,16 +313,15 @@ cursor: pointer;
 /* -----------Footer -----------------------*/
 .footer {
   background-color: black;
-  padding: 0 50px;
-}
-.footer .container {
-  height: 35vh;
+  padding: 1rem;
+  height: 41vh;
 }
 .f-col-1 {
   flex-basis: 30%;
 }
-.f-col-1 .applogo{
-width: 300px;
+.f-col-1 .applogo {
+  width: 300px;
+  cursor: pointer;
 }
 .applogo img {
   width: 100px;
@@ -337,30 +341,34 @@ width: 300px;
   flex: 1;
 }
  .site-logo {
- width: 150px;
- display: block;
- margin: 0 auto;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 .site-logo img {
   width: 100%;
 }
 .f-col-2 p {
-color: #777;
-font-size: small;
+  color: #555;
+  font-size: small;
 }
 .f-col-3 p,.f-col-4 p{
-font-weight: bold;
-color: white;
-margin-bottom: 1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
 }
 .f-col-3 li,.f-col-4 li {
   display: block;
+  margin-bottom: 0.5rem;
 }
 .f-col-3 li a,.f-col-4 li a {
   color: #777;
   font-size: small;
 }
-
+.f-col-3 a:hover,.f-col-4 a:hover {
+  border-bottom: 0.5px solid darkgray;
+}
 .f-col-3,.f-col-4 {
   flex-basis: 15%;
 }
